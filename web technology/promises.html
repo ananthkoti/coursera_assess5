@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>javascript objects</title>
+    </head>
+    <body>
+        <h1>creating javascript objects</h1>
+        <p id="demo"></p>
+
+        <script>
+            let car= new Promise (function(resolve,reject){
+                fuel_fulltank = true
+                if(fuel_fulltank)
+                resolve()
+                else
+                reject()
+            });
+
+            car.then(function(){
+                document.write("the fuel tank is full HAPPY DRIVING!!")
+            }).catch(function(){
+                document.write("the fuel tank is empty.")
+            })
+        </script>
+    </body>
+</html>        

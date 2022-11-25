@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>javascript objects with method in it</title>
+    </head>
+    <body>
+        <script>
+            function personal_details(firstname,lastname,course,cgpa){
+                this.firstname=firstname;
+                this.lastname=lastname;
+                this.course=course;
+                this.cgpa=cgpa;
+                this.changeCgpa=changeCgpa;
+                function changeCgpa(Cgpa){
+                    this.cgpa=Cgpa;
+                }
+            }
+            var student1=new personal_details("kallam","Anantha","master of computer applications","8.77");
+            document.write("old cgpa is"+student1.cgpa+"<br>");
+            student1.changeCgpa("9.14");
+            document.write("New cgpa is"+student1.cgpa);
+        </script>
+    </body>
+</html>

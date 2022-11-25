@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Sum of digits</title>
+    </head>
+    <body>
+        <script>
+            function sum_Of_Digits() 
+            {
+                var n= parseInt (prompt("enter a number to do sum of its digits: "));
+                if (n < 0) 
+                n = -n;
+                let result = 0;
+
+                while (n > 0) 
+                {
+                 result += n % 10;
+                 n = Math.floor(n / 10);
+             }
+
+            return result;
+            }
+            document.write(sum_Of_Digits());
+
+        </script>
+    </body>
+</html>

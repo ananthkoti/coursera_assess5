@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>javascript objects</title>
+    </head>
+    <body>
+        <h1>creating javascript objects</h1>
+        <p id="demo"></p>
+        <script>
+            function my_function(val){
+                document.getElementById("demo").innerHTML=val*val
+            }
+            my_function(10)
+        </script>
+
+        <script>
+            let y=function(){
+                alert("hello!")
+            }
+            document.getElementById("demo").innerHTML=y() //function expression
+        </script>
+
+        <script>
+            var Myfunction = new Function("a","b","return a+b")
+            var x =Myfunction(2,3)            // function constructor 
+            document.getElementById("demo").innerHTML="the sum is" +x
+        </script>
+    
+        <script>
+            (function(){
+                alert("welcome") // self invoking function
+            })()
+        </script>
+
+        <script>
+            function Pro(a,b){
+                return a*b
+            }
+            let z=pro(2,5) // function as value (slightly different from function constructor)
+            document.getElementById("demo").innerHTML="the product is" +z
+        </script>
+
+        <script>
+            var body="return Math.PI*rad*rad"
+            var circle=new Function("rad",body) //functions as objects
+            alert(circle(5)) 
+        </script>
+
+        <script>
+            const Myfunc = (a,b,c)=>{return a*b*c} // arrow function
+            let product = Myfunc(2,3,4)    
+            document.getElementById("demo").innerHTML="the product of the three digits is" +product 
+        </script>
+
+        <script>
+            function* generateFunc(){
+                yield 1;
+                yield 2;
+                return 3;
+            } 
+            let generator=generateFunc() //generator function
+            let one =generator.next() // it contains two properties yield value and done(done will return true if the function is finished)
+            let two =generator.next()
+            let three =generator.next()
+            alert(JSON.stringif(one))
+            alert(JSON.stringif(two))
+            alert(JSON.stringif(three))
+        </script>
+
+        <script>
+
+        </script>
+    </body>
+</html>    

@@ -1,0 +1,29 @@
+<html>
+<head>
+<script>
+	function prime(){
+		var i,n;
+	 	n=parseInt (prompt("enter a number to check it is a prime or not"));
+		if(n==0 || n==1){
+			document.write("Entered number is not a valid number");
+		}
+		for(i=2;i<=n/2;++i){
+		if(n%i==0)
+		{
+			document.write(n,": Entered number is a not prime number","<br>");
+			break;
+		}
+		else
+		document.write(n,": Entered number is a prime number","<br>"); 
+		break;
+	}
+	}
+
+</script>
+</head>
+<body>
+<script>
+	prime();
+</script>
+</body>
+</html>

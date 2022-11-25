@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>reverse of a number</title>
+    </head>
+    <body>
+        <script>
+           var num = parseInt (prompt("enter a num: "));  
+            var revnum = 0; 
+            var rem; 
+            while (num!=0)  
+            {  
+                rem = num % 10;  //to get last digit of the given number
+                revnum = (revnum * 10) + rem; //storing the remaider number with reverse number 
+                num = Math.floor(num / 10); //  update the given input
+            }  
+            document.write("Reverse of a number is:",revnum); 
+        </script>
+    </body>
+</html>

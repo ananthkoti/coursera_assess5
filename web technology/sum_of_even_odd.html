@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>sum of even and odd nums</title>
+</head>
+<body>
+<script>
+var n=parseInt (prompt("enter the number"));
+var sum=0,sum1=0;
+for(i=1;i<=n;i++){
+if(i%2==0){
+	sum=sum+i;
+}
+else if(i%2!=0){
+	sum1=sum1+i;
+}
+}
+document.write("the sum of even numbers are: ",sum,"<br>");
+
+document.write("the sum of odd numbers are: ",sum1);
+</script>
+</body>
+</html>

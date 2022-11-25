@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title> creating objects in javascript</title>
+    </head>
+    <body>
+        <script>
+        function personal_details(firstname,middlename,lastname,institution_name,course,cgpa){
+            this.firstname=firstname;
+            this.middlename=middlename;
+            this.lastname=lastname;
+            this.institution_name=institution_name;
+            this.course=course;
+            this.cgpa=cgpa;
+        }
+        var student=new personal_details("kallam","Anantha","Kotireddy","LPU","MCA","8.77");
+        document.write(student.firstname+"<br>"+student.middlename+"<br>"+student.lastname
+        +"<br>"+student.institution_name+"<br>"+student.course+"<br>"+student.cgpa);
+        </script>
+    </body>
+</html>

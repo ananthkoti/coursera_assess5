@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>javascript objects</title>
+    </head>
+    <body>
+        <h1>creating javascript objects</h1>
+        <p id="demo"></p>
+
+        <!--<script>
+            let a=10 //global variable //scope of the variable
+            function My_function(){ 
+                let b=20 //local variable
+                document.write(a+b)
+            } 
+            My_function()// closure is that where the inner function has 
+                           // access to the outer function variables
+        </script> --> 
+
+        <script>
+            var a=10;
+            function First_func(){
+                var b=20;
+                function second_func(){
+                    var c=a+b;       //its own variable, local variable(b), global variable(a)    
+                    return c;
+                }
+                return second_func();
+            }
+            var sum=First_func()
+            document.write("the sum is" + sum + '<br>' 
+
+            )
+        </script>
+    </body>
+</html>        
